@@ -7,6 +7,7 @@ var integers = ["1","2","3","4","5","6","7","8","9","0"]
 var specialChars = ["\u0021","\u0023","\u0024","\u0025","\u0026","\u0027","\u0028"]
 
 var charNum = prompt("Please enter the desired number of characters between 8 and 128")
+
 var charNumInt = parseInt(charNum)
 
 var lcaConfirm = confirm("Please select OK if lower case alphabet characters are desired.")
@@ -39,9 +40,9 @@ if (scConfirm=true) {
     var charSet = charSet.concat(specialChars)
 }
 
-console.log(charSet)
 
 var proto =[];
+
 var i = 0;
 
 for (var i = 0; i < charNumInt; i++) {
@@ -51,8 +52,7 @@ for (var i = 0; i < charNumInt; i++) {
     proto.push(charSet[selector]);
     
 }
-console.log(proto)
+
 var password = proto.join("");
-console.log(password)
 
 document.getElementById("password").innerHTML = password;
