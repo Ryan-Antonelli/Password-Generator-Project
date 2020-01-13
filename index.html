@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Bio Contact Page</title>
+    <title>Password Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -17,32 +17,34 @@
         <div class="container formBox">
             <div class="row subTitleRow">
                 
-                <section class="col-sm-10 py-3 subTitleCol">
-                    <h2 class="subTitle text-center">Generate a Password</h2>
+                <section class="col-sm-10 py-3 subTitleCol mx-auto">
+                    <span class="d-block text-center">
+                        <h2 class="subTitle">Generate a Password</h2>
+                    </span>
                 </section>
 
             </div>
             <div class="row">
 
                 <section class="col-sm-10 outputField mx-auto">
-                    <p class="entryField pt-2 pb-5" id="password">Your Secure Password
-
-                    </p>
-
+                    <span class="d-block text-center"></span>
+                        <textarea rows="5" cols="75" class="entryField pt-2 pb-5 text-center" id="password">Your Secure Password
+                        </textarea>
+                    </span>
                 </section>
 
             </div>
             <div class="row">
-                <section class="col-sm-10 buttons py-2">
-                    <button class="generatePassword">Generate Password</button>
-                    <button class="CopyToClipboard">Copy to Clipboard</button>
+                <section class="col-sm-10 buttons py-2 mx-auto">
+                    <button onclick="passwordGenerator()" class="generatePassword p-1 bg-danger">Generate Password</button>
+                    <button onclick="copyToClipboard()" class="copyToClipboard p-1">Copy to Clipboard</button>
                 </section>
 
             </div>
         </div>
     </div>
     
-    <script src="./assets/javaScript/javascript.js"></script>
+    <script src="./assets/javaScript/javascript1.js"></script> 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

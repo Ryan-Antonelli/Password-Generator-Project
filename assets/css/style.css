@@ -1,19 +1,13 @@
-.title
-.mainTitle {
-   
-}
+.title {}
+.mainTitle {}
 
 .formBox {
     border: 1px black solid;
 }
 
-.subTitleRow {
+.subTitleRow {}
 
-}
-
-subTitleCol {
-    
-}
+.subTitleCol {}
 
 .subTitle {}
     
@@ -24,10 +18,19 @@ subTitleCol {
     width: 100%;
 }
 
-.entryField
+.entryField {
+    word-wrap: break-word;
+}
 
 .buttons {}
 
-.generatePassword
-.CopyToClipboard
+.generatePassword {
+    float: left;
+    color: whitesmoke;
+}
+
+.copyToClipboard {
+
+    float: right;
+}
 
